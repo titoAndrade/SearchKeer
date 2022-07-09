@@ -1,23 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import React, {Suspense} from 'react'
+import './custom.css';
+import Loader from'./components/Loader'
+
+const RocketButton = React.lazy(() => import("./components/RocketButton"))
+const Home = React.lazy(() => import("./components/Home"))
+const Search = React.lazy(() => import("./components/Search"))
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div class="container" id='all' style={{ width: '100%' }}>       
+      <Suspense id='all' fallback={<Loader id='all' />}>
+        <div class="row justify-content-center">
+          
+          <RocketButton/>
+
+          <Home/>
+          
+          <Search/>
+
+        </div>
+      </Suspense>
     </div>
   );
 }
