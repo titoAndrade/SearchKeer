@@ -5,11 +5,11 @@
 }
 
 #all {
-  background: linear-gradient(to right, #4400b7, #4400b7, #4400b7, #8800a9, #b20099, #d10089, #e7007b, #f4296a, #fc465b, #ff5f4d, #ff8843, #ffaf43, #ffd453, #f9f871);
+  background: linear-gradient(to right, #4400b7, #7d00ab, #a1009f, #bc0094, #d10089, #e61d7a, #f5386c, #ff525e, #ff7e4f, #ffa948, #ffd153, #f9f871);
 }
 
 #loading {
-  background: linear-gradient(to right, #4400b7, #4400b7, #4400b7, #8800a9, #b20099, #d10089, #e7007b, #f4296a, #fc465b, #ff5f4d, #ff8843, #ffaf43, #ffd453, #f9f871);
+  background: linear-gradient(to right, #4400b7, #7d00ab, #a1009f, #bc0094, #d10089, #e61d7a, #f5386c, #ff525e, #ff7e4f, #ffa948, #ffd153, #f9f871);
 }
 
 #all {
@@ -45,3 +45,4 @@ a:hover {
   overflow-x: none;
   }
 }
+
