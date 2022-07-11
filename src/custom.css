@@ -5,11 +5,11 @@
 }
 
 #all {
-  background: linear-gradient(to right top, #4400b7, #4400b7, #4400b7, #8800a9, #b20099, #d10089, #e7007b, #f4296a, #fc465b, #ff5f4d, #ff8843, #ffaf43, #ffd453, #f9f871);
+  background: linear-gradient(to right, #4400b7, #4400b7, #4400b7, #8800a9, #b20099, #d10089, #e7007b, #f4296a, #fc465b, #ff5f4d, #ff8843, #ffaf43, #ffd453, #f9f871);
 }
 
 #loading {
-  background: linear-gradient(to right top, #4400b7, #4400b7, #4400b7, #8800a9, #b20099, #d10089, #e7007b, #f4296a, #fc465b, #ff5f4d, #ff8843, #ffaf43, #ffd453, #f9f871);
+  background: linear-gradient(to right, #4400b7, #4400b7, #4400b7, #8800a9, #b20099, #d10089, #e7007b, #f4296a, #fc465b, #ff5f4d, #ff8843, #ffaf43, #ffd453, #f9f871);
 }
 
 #all {
