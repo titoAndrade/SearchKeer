@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { Formik, Form, Field } from 'formik'
 import './search.css';
 
+
 const Search = () => {
   
   const [photos, setPhotos] = useState([])
@@ -24,15 +25,6 @@ const Search = () => {
             <Form>
               <div class="row justify-content-center">
               
-              <div class="col" id='searchGlass' style={{ marginLeft: '-3em', paddingTop: '0.3em' }}>
-                <lord-icon
-                  src="https://cdn.lordicon.com/pvbutfdk.json"
-                  trigger="hover"
-                  colors="primary:#ffffff"
-                  style={{ width: '2.25em', height:'2.25em',  }}>
-                </lord-icon>
-                </div>
-
                 <div class="col">
                   <Field name="search"
                     placeholder="what are you looking for?"
@@ -45,7 +37,20 @@ const Search = () => {
                       fontSize: '16px',
                       fontWeight: '400',
                     }}/>
-                </div>         
+                </div>
+
+                <div class="col" id='searchGlass' style={{ marginLeft: '-1em', paddingTop: '0.15em' }}>
+                  
+                  <button style={{ border: 'none', background: 'none' }} type="submit">
+                    <lord-icon
+                      src="https://cdn.lordicon.com/pvbutfdk.json"
+                      trigger="hover"
+                      colors="primary:#ffffff"
+                      style={{ width: '2.25em', height:'2.25em' }}>
+                    </lord-icon>
+                  </button>
+            
+                </div>
 
               </div>
             </Form>
@@ -54,9 +59,9 @@ const Search = () => {
       </div>
 
 
-      <div class="row justify-content-center" style={{ marginTop: '4vmax' }}>
+      <div class="row justify-content-center" id="result" style={{ }}>
         <div class="col-10">
-          {photos.map(photo => 
+          {photos.map(photo =>
             <article key={photo.id} onClick={() => open(photo.links.html)}>
               <img src={photo.urls.regular} alt=""/>
             </article>
