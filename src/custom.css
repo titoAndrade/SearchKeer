@@ -48,5 +48,9 @@ a:hover {
   #all {
   overflow-x: none;
   }
+
+  #searchGlass{
+    margin-left: 1vw ;
+  }
 }
 
