@@ -10,6 +10,7 @@ const RocketButton = () => {
               padding: 0,
               background: 'none',
               border: 'none',
+              zIndex: 2
             }}>
             <a href="#home">
               <lord-icon
