@@ -17,7 +17,7 @@ const RocketButton = () => {
                 src="https://cdn.lordicon.com/gmzxduhd.json"
                 trigger="hover"
                 colors="primary:#ffffff,secondary:#ffffff"
-                style={{ width:'3.5em', height:'3.5em'}}>
+                style={{ width:'3.5em', height:'3.5em', zIndex: 2}}>
               </lord-icon>
             </a>
           </button>
