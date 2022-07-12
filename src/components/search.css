@@ -40,7 +40,7 @@ article {
   display: inline-block;
   width: 25vw;
   transition: box-shadow 0.2s ease;
-  margin: 2vw;
+  margin: 1.5vw;
   border-radius: 15px;
   cursor: pointer;
 }
@@ -61,7 +61,7 @@ article > p {
   font-size: 12px;
 }
 
-img:hover {
+article:hover {
   box-shadow: 5px 5px 20px rgb(0,0,0,0.25);
 }
 
