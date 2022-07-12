@@ -10,14 +10,14 @@ const RocketButton = () => {
               padding: 0,
               background: 'none',
               border: 'none',
-              zIndex: 2
+              zIndex: 10
             }}>
             <a href="#home">
               <lord-icon
                 src="https://cdn.lordicon.com/gmzxduhd.json"
                 trigger="hover"
                 colors="primary:#ffffff,secondary:#ffffff"
-                style={{ width:'3.5em', height:'3.5em', zIndex: 2}}>
+                style={{ width:'3.5em', height:'3.5em'}}>
               </lord-icon>
             </a>
           </button>
