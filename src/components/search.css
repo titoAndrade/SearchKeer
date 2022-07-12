@@ -40,7 +40,7 @@ article {
   display: inline-block;
   width: 25vw;
   transition: box-shadow 0.2s ease;
-  margin: 1vw;
+  margin: 2vw;
   border-radius: 15px;
   cursor: pointer;
 }
