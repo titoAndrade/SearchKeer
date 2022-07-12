@@ -1,7 +1,10 @@
 import { useState, useRef } from 'react'
 import { Formik, Form, Field } from 'formik'
 import './search.css';
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 
+AOS.init()
 
 const Search = () => {
   
@@ -68,7 +71,7 @@ const Search = () => {
       <div class="row justify-content-center" id="result" ref={ref} >
         <div class="col-10" id='center'>
           {photos.map(photo =>
-            <article key={photo.id} onClick={() => open(photo.links.html)}>
+            <article data-aos="fade-up" data-aos-duration="1500" key={photo.id} onClick={() => open(photo.links.html)}>
               <img src={photo.urls.regular} alt=""/>
             </article>
           )}
