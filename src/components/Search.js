@@ -1,10 +1,16 @@
-import { useState } from 'react'
+import { useState, useRef } from 'react'
 import { Formik, Form, Field } from 'formik'
 import './search.css';
 
 
 const Search = () => {
   
+  const ref = useRef(null);
+
+  const handleClick = () => {
+    ref.current?.scrollIntoView({behavior: 'smooth'});
+  }
+
   const [photos, setPhotos] = useState([])
   const open = url => window.open(url)
   console.log({ photos })
@@ -31,17 +37,17 @@ const Search = () => {
                     style={{
                       width: '65vmin',
                       borderRadius:'20px',
-                      marginLeft:'-0.5em',
-                      paddingInline: '2em',
+                      textAlign: 'left',
+                      paddingLeft: '6vmin',
                       color: '#171717',
-                      fontSize: '16px',
+                      fontSize: '1em',
                       fontWeight: '400',
                     }}/>
                 </div>
 
-                <div class="col" id='searchGlass' style={{ marginLeft: '-1em', paddingTop: '0.15em' }}>
+                <div class="col" id='searchGlass' style={{ marginLeft: '-1.5em', paddingTop: '0.15em' }}>
                   
-                  <button style={{ border: 'none', background: 'none' }} type="submit">
+                  <button style={{ border: 'none', background: 'none' }} type="submit" onClick={handleClick}>
                     <lord-icon
                       src="https://cdn.lordicon.com/pvbutfdk.json"
                       trigger="hover"
@@ -59,8 +65,8 @@ const Search = () => {
       </div>
 
 
-      <div class="row justify-content-center" id="result" style={{ }}>
-        <div class="col-10">
+      <div class="row justify-content-center" id="result" ref={ref} >
+        <div class="col-10" id='center'>
           {photos.map(photo =>
             <article key={photo.id} onClick={() => open(photo.links.html)}>
               <img src={photo.urls.regular} alt=""/>

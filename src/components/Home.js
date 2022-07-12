@@ -45,7 +45,7 @@ const Home = () => {
           <div class="row">
             <div class="col-8">
               <h4 style={{ marginTop: '1.2em', textShadow: '1px 1px 5px rgba(0,0,0,0.4)' }}><b>How it works ?</b></h4>
-              <h6 style={{ display:'inline', fontSize: '1.1em', fontWeight: '600'}}> Type what you are looking for, &nbsp; press Enter or click on lens icon & &nbsp; scroll down </h6>
+              <h6 style={{ display:'inline', fontSize: '1.1em', fontWeight: '600'}}> Type what you are looking for, press Enter or click on lens icon & scroll down </h6>
               <lord-icon
                 src="https://cdn.lordicon.com/xhdhjyqy.json"
                 trigger="hover"
