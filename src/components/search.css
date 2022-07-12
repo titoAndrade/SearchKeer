@@ -61,7 +61,7 @@ article > p {
   font-size: 12px;
 }
 
-article:hover {
+img:hover {
   box-shadow: 5px 5px 20px rgb(0,0,0,0.25);
 }
 
