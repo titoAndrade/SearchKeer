@@ -38,7 +38,7 @@ const Search = () => {
                       width: '65vmin',
                       borderRadius:'20px',
                       textAlign: 'left',
-                      paddingLeft: '6vmin',
+                      paddingLeft: '4vmin',
                       color: '#171717',
                       fontSize: '1em',
                       fontWeight: '400',
