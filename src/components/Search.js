@@ -48,7 +48,7 @@ const Search = () => {
                     }}/>
                 </div>
 
-                <div class="col" id='searchGlass' style={{ marginLeft: '-2em', paddingTop: '0.10em' }}>
+                <div class="col" id='searchGlass' style={{ marginLeft: '-1.5em', paddingTop: '0.15em' }}>
                   
                   <button style={{ border: 'none', background: 'none' }} type="submit" onClick={handleClick}>
                     <lord-icon
