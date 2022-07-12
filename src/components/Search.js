@@ -71,8 +71,8 @@ const Search = () => {
       <div class="row justify-content-center" id="result" ref={ref} >
         <div class="col-10" id='center'>
           {photos.map(photo =>
-            <article data-aos="fade-up" data-aos-duration="1500" key={photo.id} onClick={() => open(photo.links.html)}>
-              <img src={photo.urls.regular} alt=""/>
+            <article key={photo.id} onClick={() => open(photo.links.html)}>
+              <img data-aos="fade-up" data-aos-duration="1500" src={photo.urls.regular} alt=""/>
             </article>
           )}
         </div>
